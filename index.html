@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./media.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div id="div1" class="same">
+            <h2>Click Event</h2>
+            <p>Click to check Date</p>
+            <button onclick="displayDate()">check</button>
+            <p id="date-para"></p>
+        </div>
+
+        <div id="div2" class="same">
+            <h2>onchange Event</h2>
+            <select id="colorSelect" onchange="changeColor()">
+                <option value="">Select a color</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="salmon">Salmon</option>
+            </select>
+            <div id="colorBox"></div>
+            <p id="color-para"></p>
+        </div>
+
+        <div id="div3" class="same">
+            <h2>Mouse Event</h2>
+            <div id="trackingArea" >
+                <img src="./imges/goji3.jpg" alt="" >
+            </div>
+            <p id="coordinates">Mouse Coordinates: ( 0, 0)</p>
+        </div>
+
+        <div id="div4" class="same">
+            <h2>Double Click Event</h2>
+            <button ondblclick="changeBgColor()">Double Click</button>
+            <p id="bg-para"></p>
+        </div>
+
+        <div id="div5" class="same">
+            <h2>keyboard Event</h2>
+            <input type="text" id="input-field" placeholder="Type here">
+            <p id="key-display">Last Key Pressed: None</p>
+        </div>
+
+        <div id="div6" class="same">
+            <h2>Window Resize Event</h2>
+            <p id="resize-info">Width: 0, Height: 0</p>
+        </div>
+
+        <div id="div7" class="same">
+            <h2>MouseOver & MouseOut Event</h2>
+            <div id="img-container">
+                <img src="./imges/Utahime.jpg" alt="Original Image" id="image">
+            </div>
+        </div>
+
+        <div id="div8" class="same">
+            <h2>Submit Event</h2>
+            <form onsubmit="myFunction(event)">
+                Enter name: <input type="text" id="name">
+                <input type="submit" value="Submit">
+                <p id="para">Form Status:</p>
+            </form>
+        </div>
+
+        <div id="div9" class="same">
+            <h2>Drag and Drop</h2>
+            <p>Drag the image back and forth between the two div elements.</p>
+
+           <div class="ran">
+            <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="imges/gojo.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="200px" height="200px">
+            </div>
+
+            <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+           </div>
+        </div>
+
+        <div id="div10" class="same">
+            <h2>Media Event</h2>
+            <video id="videoPlayer" src="./imges/video.mp4" controls></video>
+            <p id="mediaStatus">Status: Ready to play</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+
+@media (max-width: 321px) { 
+        body{font-size: 12px;} 
+   
+
+    .container {
+        width: 300px;
+    }
+        .same{
+            width: 300px;
+            border: 1px solid red;
+            padding: 0.5rem;
+            margin: 2rem;
+            padding: 1rem;
+        }   
+    h2 {
+        font-size: 2rem;
+    }
+    #div3 img{
+        width:280px;
+         height: 200px;
+    }
+    p{
+        font-size: 1.2rem;
+        padding: auto;
+        margin: 10px;
+    }
+    #img-container {
+        width: 280px;
+        height: 280px;
+        overflow: hidden;
+        border: 2px solid #ccc;
+        margin-top: 10px;
+    }
+    #div7 #image{
+        width: 250px;
+     
+     } 
+     #drag, #drop {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+        padding: 10px ;
+        border: 1px solid black;
+    }
+    
+    #div9 img{
+        width: 120px;
+        height: 120px;
+     }
+     select{
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        border-radius: 5px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    video {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    .ran{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        padding: .5rem;
+    }
+}
+
+
